@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NikoSafe</title>
+
+    <!--CSS-->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+    <h1>NikoSafe</h1>
+  </header>
+  
+  <nav>
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/recent-incidents">Recent Incidents</a></li>
+      <li><a href="/safety-tips">Safety Tips</a></li>
+      <li><a href="/risk-map">Risk Map</a></li>
+      <li><a href="/community">Community</a></li>
+      <li><a href="/report-incident">Report Incident</a></li>
+    </ul>
+  </nav>
+  
+  <main>
+    <div class="alert" id="current-alert">
+      <strong>ALERT:</strong> Increased street harassment reported. Stay vigilant and travel in groups when possible.
+    </div>
+    
+    <div class="search-form">
+      <h2>Check Area Safety</h2>
+      <form id="safety-search-form">
+        <input type="text" id="area-input" placeholder="Enter an area or address">
+        <button type="submit">Check Safety</button>
+      </form>
+      <div id="search-result"></div>
+    </div>
+    
+    <div id="location-alert"></div>
+    
+    <div class="dashboard">
+      <div class="widget">
+        <h2>Current Risk Level</h2>
+        <div id="risk-meter">
+          <div id="risk-needle"></div>
+        </div>
+        <p id="risk-description">Calculating risk level...</p>
+      </div>
+      
+      <div class="widget" style="grid-column: span 2;">
+        <h2>Real-time Risk Map</h2>
+        <div id="map"></div>
+      </div>
+      
+      <div class="widget">
+        <h2>Safety Tips</h2>
+        <ul id="safety-tips">
+          <li>Stay aware of your surroundings at all times</li>
+          <li>Keep valuables secure and out of sight</li>
+          <li>Use well-lit and populated routes, especially at night</li>
+          <li>Trust your instincts - if a situation feels unsafe, leave the area</li>
+          <li>Share your location with trusted contacts when out alone</li>
+        </ul>
+      </div>
+      
+      <div class="widget">
+        <h2>Emergency Contacts</h2>
+        <ul>
+          <li>Emergency Services: 911</li>
+          <li>Safety Hotline: 999 / 112</li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="widget">
+      <h2>AI-Powered Safety Recommendations</h2>
+      <p id="ai-recommendations">Analyzing local data to generate personalized safety recommendations...</p>
+    </div>
+  </main>
+  
+  <footer>
+    <p>&copy; 2023 NikoSafe. All rights reserved.</p>
+    <p>Remember: Your safety is our priority. Stay informed, stay alert, stay safe.</p>
+  </footer>   
+   <!--Scripts-->
+ <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCZSty86dbpGQV-VJGvhCLe14VwgvMS-98&libraries=visualization"></script>
+ <script src="script.js"></script> 
+</body>
+</html>
